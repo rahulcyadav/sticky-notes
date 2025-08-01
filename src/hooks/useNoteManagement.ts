@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { AUTO_SAVE_DELAY, DEFAULT_NOTE_SIZE, NOTE_COLORS } from "../constants";
+import { AUTO_SAVE_DELAY, DEFAULT_NOTE_SIZE } from "../constants";
 import { APIService } from "../services/APIService";
 import { StorageService } from "../services/StorageService";
 import type { INote, IPosition } from "../types";
@@ -27,7 +27,7 @@ export const useNoteManagement = () => {
     // sync notes to API
     const syncTimer = setTimeout(async () => {
       try {
-        const response = await APIService.syncNotes(notes);
+        await APIService.syncNotes(notes);
       } catch (error) {
         console.error("Failed to sync notes to API:", error);
       }

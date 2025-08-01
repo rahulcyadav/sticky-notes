@@ -20,7 +20,6 @@ interface NoteProps {
 export const Note: React.FC<NoteProps> = ({
   note,
   updateNote,
-  deleteNote,
   overlapNote,
   dragState,
   startDrag,
