@@ -1,0 +1,23 @@
+.StickyNotesApp {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Workspace {
+  flex-grow: 1;
+  position: relative;
+}
+
+.EmptyStateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.EmptyState {
+  text-align: center;
+  color: gray;
+}
