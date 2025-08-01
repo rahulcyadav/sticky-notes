@@ -1,0 +1,27 @@
+.NoteHeader {
+  background-color: slategray;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0.1rem;
+  cursor: move;
+}
+
+.NoteTitle {
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 50%;
+}
+
+.Note {
+  position: absolute;
+  opacity: 1;
+  scale: 1;
+}
+
+.NoteTextarea {
+  cursor: "text";
+}
